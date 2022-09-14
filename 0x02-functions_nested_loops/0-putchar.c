@@ -9,8 +9,8 @@ int main(void)
 
 {
 
-write(2, "_putchar\n", 10);
+write(1, "_putchar\n", 9);
 
-return (0);
+return (1);
 
 }
