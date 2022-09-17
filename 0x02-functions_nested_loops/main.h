@@ -1,8 +1,7 @@
-#ifndef main
-int _putchar(char n)
-{
+#ifndef MAIN_H
+#define MAIN_H
 
-return (n);
-}
-#define main
-#endif
+int _putchar(char n);
+void print_alphabet(void);
+
+#endif /*MAIN_H*/
