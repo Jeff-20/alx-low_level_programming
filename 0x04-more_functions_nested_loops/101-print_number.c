@@ -1,5 +1,4 @@
 #include "main.h"
-void print_integer(int m);
 
 /**
  * print_number - a function that prints an integer.
@@ -20,7 +19,7 @@ print_integer(n);
 }
 
 /**
- * print_integer - A function to priting n
+ * print_integer - function for printing an unsigned integer
  * @m: an input unsigned integer
  * Return: Nothing
  */
