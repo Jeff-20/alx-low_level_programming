@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * rev_string - reverses a string,
+ * rev_string - reverses a string
  * followed by a new line
- * @s: an input string
+ * @s: input string
  * Return: Nothing
  */
 void rev_string(char *s)
@@ -18,4 +18,5 @@ while (len)
 _putchar(s[--len]);
 
 _putchar('\n');
+
 }
