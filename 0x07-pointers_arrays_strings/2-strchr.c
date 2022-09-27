@@ -10,11 +10,11 @@
  */
 char *_strchr(char *s, char c)
 {
-char *r;
+char *f;
 
 c = 'l';
 
-r = strchr(s, c);
+f = strchr(s, c);
 
-return (r);
+return (f);
 }
