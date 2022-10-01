@@ -20,7 +20,7 @@ for (i = 1; i < argc; i++)
 {
 n1 = atoi(argv[i]);
 n2 = atoi(argv[i + 1]);
-res = n1 * n2;
+res = n1 *n2;
 
 printf("%d\n", res);
 
