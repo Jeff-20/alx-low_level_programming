@@ -16,12 +16,15 @@ char *new;
 int size;
 size = strlen(str);
 
-new = malloc(sizeof(char) * (size + 1));
+new = malloc(sizeof(char) * (size));
 
 if (str == NULL)
 return (NULL);
 
-else
+if (new == NULL)
+return (NULL);
+
+while (str)
 {
 new = strdup(str);
 
