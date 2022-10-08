@@ -24,7 +24,7 @@ if (z == NULL || min > max)
 return (NULL);
 }
 
-for (i = 0; i >= min && i <= max; i++)
+for (i = 0; i <= d; i++)
 {
 
 z[i] = min;
