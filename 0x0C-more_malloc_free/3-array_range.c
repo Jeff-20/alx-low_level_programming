@@ -17,9 +17,12 @@ int i;
 int d;
 d = max - min;
 
+if (min > max)
+return (NULL);
+
 z = malloc(sizeof(int) * (d + 1));
 
-if (z == NULL || min > max)
+if (z == NULL)
 {
 return (NULL);
 }
