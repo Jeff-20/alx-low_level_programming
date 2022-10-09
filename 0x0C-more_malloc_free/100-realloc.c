@@ -12,11 +12,11 @@
 */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-char *ptr_new;
+int *ptr_new;
 
-ptr = (char *) malloc(old_size);
+ptr = malloc(old_size);
 
-ptr_new = (char *) malloc(new_size);
+ptr_new = malloc(new_size);
 
 memcpy(ptr_new, ptr, old_size);
 
