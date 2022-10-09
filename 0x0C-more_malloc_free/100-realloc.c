@@ -41,6 +41,7 @@ if (new_size == 0 && ptr != NULL)
 free(ptr);
 return (NULL);
 }
+free(ptr);
 return (ptr_new);
 }
 
