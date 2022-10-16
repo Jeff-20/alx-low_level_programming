@@ -20,7 +20,7 @@ char *str;
 va_start(valist, n);
 
 for (; i < n; i++)
-{	
+{
 str = va_arg(valist, char*);
 
 if (str == NULL)
