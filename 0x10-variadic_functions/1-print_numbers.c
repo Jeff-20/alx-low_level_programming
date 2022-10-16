@@ -16,8 +16,6 @@ va_list valist;
 
 unsigned int i = 0;
 
-separator = ", ";
-
 va_start(valist, n);
 
 for (; i < n; i++)
