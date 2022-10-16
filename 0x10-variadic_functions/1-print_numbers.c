@@ -24,11 +24,11 @@ for (; i < n; i++)
 {
 printf("%d", va_arg(valist, int));
 
-if (i < n - 1)
-printf("%s", separator);
-
 if (separator == NULL)
 continue;
+
+if (i < n - 1)
+printf("%s", separator);
 
 }
 printf("\n");
