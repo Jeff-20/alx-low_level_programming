@@ -20,15 +20,15 @@ separator = ", ";
 
 va_start(valist, n);
 
-if (separator == NULL)
-return;
-
 for (; i < n; i++)
 {
 printf("%d", va_arg(valist, int));
 
 if (i < n - 1)
 printf("%s", separator);
+
+if (separator == NULL)
+continue;
 
 }
 printf("\n");
