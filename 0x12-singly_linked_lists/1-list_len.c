@@ -15,17 +15,13 @@ size_t list_len(const list_t *h)
 
 {
 unsigned int i = 0;
-unsigned int nodes = 0;
 
-if (h != NULL)
+while (h != NULL)
 {
-
-while (i < nodes)
-return (i++);
-h = h->next;
-nodes++;
 i++;
 
+h = h->next;
+
 }
-return (i + 1);
+return (i);
 }
