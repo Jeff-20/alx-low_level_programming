@@ -5,7 +5,7 @@
 /**
 * list_len - function that returns a number of
 * of elements in a linked list_t list
-* @list_t: struct
+*
 * @h: pointer to first node
 *
 * Return: number of elements
