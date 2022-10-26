@@ -18,7 +18,7 @@ tmp = *head;
 if (head == NULL)
 return;
 
-while (tmp != NULL)
+while (tmp)
 {
 tmp = tmp->next;
 free(*head);
