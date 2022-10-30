@@ -24,10 +24,9 @@ return (NULL);
 
 shift->str = strdup(str);
 shift->len = length;
+shift->next = *head;
 
 *head = shift;
-print_list(*head);
 
-free(shift);
 return (*head);
 }
