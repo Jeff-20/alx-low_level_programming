@@ -26,8 +26,10 @@ lo++;
 
 p = malloc(sizeof(dog_t));
 if (p == NULL)
+{
+free(p);
 return (NULL);
-
+}
 newname = malloc(ln + 1);
 if (newname == NULL)
 return (NULL);
@@ -45,5 +47,6 @@ newowner[i] = '\0';
 p->name = newname;
 p->age = age;
 p->owner = newowner;
+
 return (p);
 }
