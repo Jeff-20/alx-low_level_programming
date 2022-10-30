@@ -31,7 +31,6 @@ return (NULL);
 newname = malloc(ln + 1);
 if (newname == NULL)
 return (NULL);
-
 for (i = 0; name[i]; i++)
 newname[i] = name[i];
 newname[i] = '\0';
@@ -39,7 +38,6 @@ newname[i] = '\0';
 newowner = malloc(lo + 1);
 if (newowner == NULL)
 return (NULL);
-
 for (i = 0; owner[i]; i++)
 newowner[i] = owner[i];
 newowner[i] = '\0';
