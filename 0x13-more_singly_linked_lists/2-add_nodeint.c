@@ -19,10 +19,8 @@ if (new == NULL)
 return (NULL);
 
 new->n = n;
-
+new->next = *head;
 *head = new;
-print_listint(*head);
 
-free(new);
 return (*head);
 }
