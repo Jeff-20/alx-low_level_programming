@@ -16,33 +16,24 @@
 
 int create_file(const char *filename, char *text_content)
 {
-int fd, r, w;
-unsigned int length;
-char *buf;
-
-length = strlen(text_content);
-
-buf = malloc(sizeof(char) * length);
+int fd, w;
+int length = 0;
 
 if (filename == NULL)
 return (-1);
 
-fd = open(filename, O_CREAT | O_TRUNC | O_RDWR, 0600);
+fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 
 if (fd < 0)
 return (-1);
 
-r = read(fd, buf, length);
+while (text_content && *(text_content + length))
+length++;
 
-if (r < 0)
-return (-1);
-
-w = write(STDOUT_FILENO, text_content, r);
-
+w = write(STDOUT_FILENO, text_content, length);
+close(fd);
 if (w < 0)
 return (-1);
-
-close(fd);
 
 return (1);
 
