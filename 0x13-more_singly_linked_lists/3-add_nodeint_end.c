@@ -35,6 +35,7 @@ while (tmp->next)
 tmp = tmp->next;
 tmp->next = new;
 
-}
+} 
+
 return (new);
 }
