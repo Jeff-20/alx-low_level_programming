@@ -22,7 +22,6 @@ return (NULL);
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
-
 if (*head == NULL)
 {
 *head = new;
