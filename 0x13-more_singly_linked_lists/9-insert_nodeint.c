@@ -35,6 +35,7 @@ return (new);
 if (idx == 0)
 {
 new->next = *head;
+new->n = n;
 *head = new;
 return (new);
 }
