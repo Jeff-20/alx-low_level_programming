@@ -21,14 +21,13 @@ if (head == NULL)
 return (NULL);
 
 new = malloc(sizeof(listint_t));
-new->n = n;
-
 if (new == NULL)
 return (NULL);
 
 if (*head == NULL)
 {
 *head = new;
+new->n = n;
 new->next = NULL;
 return (new);
 }
@@ -45,8 +44,8 @@ tmp = tmp->next;
 
 i++;
 }
-
 new->next = tmp->next;
+new->n = n;
 tmp->next = new;
 
 return (new);
