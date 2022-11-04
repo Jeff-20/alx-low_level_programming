@@ -16,7 +16,6 @@ unsigned int i = 1;
 listint_t *tmp;
 listint_t *new;
 
-tmp = *head;
 if (head == NULL)
 return (NULL);
 
@@ -38,6 +37,7 @@ new->n = n;
 *head = new;
 return (new);
 }
+tmp = *head;
 while (i != idx)
 {
 tmp = tmp->next;
