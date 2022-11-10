@@ -1,60 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
- * main - Entry point
+ * main - program that adds positive numbers
+ * @argc: argument count
+ * @argv: argument vector (values to be added)
  *
- * Return: Always 0
+ * Return: Returns 0 on success and 1 on failure
  */
-
 int main(int argc, char *argv[])
 {
 
-int sum = 0;
-int i = 1;
+int n, sum = 0;
 
-if (argc < 1)
+while (argc-- > 1)
 {
-
-printf("0\n");
-return (0);
-}
-
-if (argc > 1)
+int i = 0;
+for (; argv[argc][i]; i++)
 {
-
-int n;
-n = atoi(argv[i]);
-
-for (n = 'a'; n <= 'z'; n++)
+if (!(isdigit(argv[argc][i])))
 {
-
 printf("Error\n");
 return (1);
 }
-
 }
-
-else
-{
-
-while (argc <= 3)
-{
-
-sum = atoi(argv[1])  + atoi(argv[2]);
+n = atoi(argv[argc]);
+sum += n;
+}
 printf("%d\n", sum);
-return (sum);
-}
-
-while (argc > 3)
-{
-sum = atoi(argv[1]) + atoi(argv[2]) + atoi(argv[3]) + atoi(argv[4]) + atoi(argv[5]);
-printf("%d\n", sum);
-return (sum);
-}
-}
-
-printf("%d\n", sum);
-
 return (0);
 }
