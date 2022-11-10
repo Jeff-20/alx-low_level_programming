@@ -14,12 +14,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *z;
 
-z = malloc(sizeof(char) * size);
+z = malloc(nmemb * size);
 
-if (z != NULL)
-memset(z, 0, sizeof(char) * size);
+if (z == NULL)
+return (NULL);
 
-if (nmemb == 0 || size == 0 ||  z == NULL)
+else
+memset(z, 0, nmemb * size);
+
+if (nmemb == 0 || size == 0)
 return (NULL);
 
 return (z);
