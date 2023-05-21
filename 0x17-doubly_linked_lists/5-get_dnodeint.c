@@ -21,6 +21,7 @@ return (NULL);
 
 tmp = head;
 
+
 while (head != NULL)
 {
 
@@ -29,8 +30,10 @@ while (i < index)
 tmp = tmp->next;
 i++;
 }
-
 return (tmp);
+
+if (tmp->next == NULL)
+return (NULL);
 }
 return (tmp);
 }
