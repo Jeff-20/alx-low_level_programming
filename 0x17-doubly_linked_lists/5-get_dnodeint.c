@@ -21,7 +21,6 @@ return (NULL);
 
 tmp = head;
 
-
 while (head != NULL)
 {
 
